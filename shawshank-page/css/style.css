@@ -3,189 +3,127 @@
 }
 
 body {
-  font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
   margin: 0;
-  color: #e8e8e8;
-  background-color: #16213e;
-  overflow-x: hidden;
+  font-family: "Microsoft YaHei", sans-serif;
+  color: #333;
+  background-color: #f5f5f5;
 }
 
 a {
-  color: inherit;
   text-decoration: none;
+  color: #333;
 }
 
 img {
   max-width: 100%;
   height: auto;
-  display: block;
 }
 
-.section-title {
-  font-size: 1.8rem;
-  text-align: center;
-  margin-bottom: 32px;
-  color: #f5c518;
-}
-
-/* 导航栏 */
-.site-header {
-  background-color: rgba(15, 21, 42, 0.95);
+/* 导航栏 - Flex布局 */
+.nav {
+  background-color: #16213e;
   position: sticky;
   top: 0;
-  z-index: 100;
-  border-bottom: 1px solid rgba(245, 197, 24, 0.2);
+  z-index: 10;
 }
 
-.nav-wrap {
-  max-width: 1100px;
+.nav-inner {
+  max-width: 1000px;
   margin: 0 auto;
-  padding: 12px 16px;
+  padding: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 8px;
 }
 
 .logo {
-  font-size: 1.2rem;
+  color: #f5c518;
+  font-size: 20px;
   font-weight: bold;
-  color: #f5c518;
 }
 
-.main-nav {
+.menu {
   display: flex;
-  gap: 16px;
-  flex-wrap: wrap;
+  gap: 20px;
 }
 
-.main-nav a {
-  font-size: 0.95rem;
+.menu a {
   color: #ccc;
-  transition: color 0.2s;
+  font-size: 14px;
 }
 
-.main-nav a:hover {
+.menu a:hover {
   color: #f5c518;
 }
 
-/* Hero 区 */
+/* Hero 区 - Flex布局 */
 .hero {
-  max-width: 1100px;
+  max-width: 1000px;
   margin: 0 auto;
-  padding: 48px 16px;
+  padding: 40px 15px;
   display: flex;
   align-items: center;
   gap: 40px;
 }
 
-.hero-content {
+.hero-text {
   flex: 1;
 }
 
-.hero h1 {
-  font-size: 2.8rem;
-  margin: 0 0 8px;
-  color: #f5c518;
+.hero-text h1 {
+  font-size: 36px;
+  color: #16213e;
+  margin: 0 0 10px;
 }
 
-.hero-en {
-  font-size: 1.1rem;
-  color: #aaa;
-  margin: 0 0 16px;
+.hero-text .en {
+  color: #888;
   font-style: italic;
+  margin: 0 0 15px;
 }
 
-.hero-tagline {
-  font-size: 1.4rem;
+.hero-text .tagline {
+  font-size: 20px;
   color: #e94560;
-  margin: 0 0 16px;
   font-weight: bold;
-}
-
-.hero-desc {
-  font-size: 1rem;
-  line-height: 1.7;
-  color: #ccc;
   margin: 0;
 }
 
-.hero-poster {
-  flex: 0 0 280px;
+.hero-img {
+  flex: 0 0 250px;
 }
 
-.hero-poster img {
+.hero-img img {
   border-radius: 8px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
 }
 
-/* 基本信息栏 */
-.info-section {
-  max-width: 1100px;
+/* 基本信息 */
+.info {
+  max-width: 1000px;
   margin: 0 auto;
-  padding: 40px 16px;
+  padding: 30px 15px;
 }
 
-.info-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
+.info h2 {
+  color: #16213e;
 }
 
-.info-item {
-  background-color: #0f152a;
-  border: 1px solid rgba(245, 197, 24, 0.15);
-  border-radius: 8px;
+.info-list {
+  background-color: #fff;
   padding: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-
-.info-label {
-  font-size: 0.85rem;
-  color: #888;
-}
-
-.info-value {
-  font-size: 1.1rem;
-  font-weight: bold;
-}
-
-.info-value.highlight {
-  color: #f5c518;
-  font-size: 1.4rem;
-}
-
-/* 剧情简介 */
-.story-section {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 40px 16px;
-}
-
-.story-content {
-  background-color: #0f152a;
   border-radius: 8px;
-  padding: 24px;
-  line-height: 1.8;
-  color: #ccc;
+  line-height: 2;
 }
 
-.story-content p {
-  margin: 0 0 16px;
-}
-
-.story-content p:last-child {
-  margin-bottom: 0;
+.info-list p {
+  margin: 0;
 }
 
 /* 页脚 */
-.site-footer {
+.footer {
   text-align: center;
-  padding: 24px 16px;
-  color: #666;
-  font-size: 0.9rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  color: #888;
+  font-size: 14px;
+  border-top: 1px solid #ddd;
 }
