@@ -1,0 +1,191 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+  margin: 0;
+  color: #e8e8e8;
+  background-color: #16213e;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 32px;
+  color: #f5c518;
+}
+
+/* 导航栏 */
+.site-header {
+  background-color: rgba(15, 21, 42, 0.95);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid rgba(245, 197, 24, 0.2);
+}
+
+.nav-wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 12px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #f5c518;
+}
+
+.main-nav {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.main-nav a {
+  font-size: 0.95rem;
+  color: #ccc;
+  transition: color 0.2s;
+}
+
+.main-nav a:hover {
+  color: #f5c518;
+}
+
+/* Hero 区 */
+.hero {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 48px 16px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero-content {
+  flex: 1;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin: 0 0 8px;
+  color: #f5c518;
+}
+
+.hero-en {
+  font-size: 1.1rem;
+  color: #aaa;
+  margin: 0 0 16px;
+  font-style: italic;
+}
+
+.hero-tagline {
+  font-size: 1.4rem;
+  color: #e94560;
+  margin: 0 0 16px;
+  font-weight: bold;
+}
+
+.hero-desc {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #ccc;
+  margin: 0;
+}
+
+.hero-poster {
+  flex: 0 0 280px;
+}
+
+.hero-poster img {
+  border-radius: 8px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+}
+
+/* 基本信息栏 */
+.info-section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 16px;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.info-item {
+  background-color: #0f152a;
+  border: 1px solid rgba(245, 197, 24, 0.15);
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.info-label {
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.info-value {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.info-value.highlight {
+  color: #f5c518;
+  font-size: 1.4rem;
+}
+
+/* 剧情简介 */
+.story-section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 16px;
+}
+
+.story-content {
+  background-color: #0f152a;
+  border-radius: 8px;
+  padding: 24px;
+  line-height: 1.8;
+  color: #ccc;
+}
+
+.story-content p {
+  margin: 0 0 16px;
+}
+
+.story-content p:last-child {
+  margin-bottom: 0;
+}
+
+/* 页脚 */
+.site-footer {
+  text-align: center;
+  padding: 24px 16px;
+  color: #666;
+  font-size: 0.9rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
