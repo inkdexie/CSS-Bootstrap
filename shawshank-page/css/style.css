@@ -201,6 +201,31 @@ img {
   }
 }
 
+/* 经典台词 */
+.quotes {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px 15px;
+}
+
+.quotes h2 {
+  color: #16213e;
+}
+
+.quote-item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  border-left: 4px solid #f5c518;
+}
+
+.quote-item p {
+  margin: 0;
+  color: #666;
+  font-style: italic;
+}
+
 /* 页脚 */
 .footer {
   text-align: center;
