@@ -190,6 +190,35 @@ img {
   line-height: 1.6;
 }
 
+/* 响应式适配 */
+@media (max-width: 768px) {
+  .nav-inner {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-img {
+    flex: none;
+  }
+
+  .card-grid,
+  .review-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 991px) {
+  .card-grid,
+  .review-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 /* 页脚 */
 .footer {
   text-align: center;
