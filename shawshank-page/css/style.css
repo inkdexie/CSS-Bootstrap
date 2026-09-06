@@ -119,6 +119,77 @@ img {
   margin: 0;
 }
 
+/* 角色卡片墙 - Grid布局 */
+.characters {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px 15px;
+}
+
+.characters h2 {
+  color: #16213e;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.card h3 {
+  color: #16213e;
+  margin: 0 0 10px;
+}
+
+.card p {
+  margin: 0;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* 影评区 */
+.reviews {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px 15px;
+}
+
+.reviews h2 {
+  color: #16213e;
+}
+
+.review-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.review {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  border-left: 4px solid #f5c518;
+}
+
+.review-name {
+  font-weight: bold;
+  color: #16213e;
+  margin: 0 0 8px;
+}
+
+.review p:last-child {
+  margin: 0;
+  color: #666;
+  line-height: 1.6;
+}
+
 /* 页脚 */
 .footer {
   text-align: center;
