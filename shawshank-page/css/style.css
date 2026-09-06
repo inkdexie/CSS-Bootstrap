@@ -119,6 +119,26 @@ img {
   margin: 0;
 }
 
+/* 电影简介 */
+.story {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px 15px;
+}
+
+.story h2 {
+  color: #16213e;
+}
+
+.story p {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  line-height: 1.8;
+  color: #666;
+  margin: 0;
+}
+
 /* 角色卡片墙 - Grid布局 */
 .characters {
   max-width: 1000px;
@@ -154,42 +174,6 @@ img {
   line-height: 1.6;
 }
 
-/* 影评区 */
-.reviews {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 30px 15px;
-}
-
-.reviews h2 {
-  color: #16213e;
-}
-
-.review-list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
-}
-
-.review {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  border-left: 4px solid #f5c518;
-}
-
-.review-name {
-  font-weight: bold;
-  color: #16213e;
-  margin: 0 0 8px;
-}
-
-.review p:last-child {
-  margin: 0;
-  color: #666;
-  line-height: 1.6;
-}
-
 /* 响应式适配 */
 @media (max-width: 768px) {
   .nav-inner {
@@ -206,15 +190,13 @@ img {
     flex: none;
   }
 
-  .card-grid,
-  .review-list {
+  .card-grid {
     grid-template-columns: 1fr;
   }
 }
 
 @media (min-width: 769px) and (max-width: 991px) {
-  .card-grid,
-  .review-list {
+  .card-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
