@@ -19,40 +19,23 @@ img {
   height: auto;
 }
 
-/* 导航栏 - Flex布局 */
-.nav {
+/* 导航栏 - Bootstrap navbar theme override */
+.site-nav {
   background-color: #16213e;
-  position: sticky;
-  top: 0;
-  z-index: 10;
 }
 
-.nav-inner {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 15px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
+.site-nav .navbar-brand {
   color: #f5c518;
   font-size: 20px;
   font-weight: bold;
 }
 
-.menu {
-  display: flex;
-  gap: 20px;
-}
-
-.menu a {
+.site-nav .nav-link {
   color: #ccc;
   font-size: 14px;
 }
 
-.menu a:hover {
+.site-nav .nav-link:hover {
   color: #f5c518;
 }
 
@@ -158,17 +141,16 @@ img {
 
 .card {
   background-color: #fff;
-  padding: 20px;
   border-radius: 8px;
   border: 1px solid #ddd;
 }
 
-.card h3 {
+.card-title {
   color: #16213e;
   margin: 0 0 10px;
 }
 
-.card p {
+.card-text {
   margin: 0;
   color: #666;
   line-height: 1.6;
@@ -176,11 +158,6 @@ img {
 
 /* 响应式适配 */
 @media (max-width: 768px) {
-  .nav-inner {
-    flex-direction: column;
-    gap: 10px;
-  }
-
   .hero {
     flex-direction: column;
     text-align: center;
